@@ -1,0 +1,32 @@
+.header {
+  position: relative;
+  background-color: #52796f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 10rem;
+  z-index: 100;
+}
+
+.header h1 {
+  color: #fff;
+}
+
+.header div {
+  background-color: #2f3e46;
+  padding: 0.7rem 3rem;
+  border-radius: 2rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.header div span {
+  background-color: #cad2c5;
+  color: #2f3e46;
+  font-weight: bold;
+  margin-left: 1.5rem;
+  padding: 0.25rem 1rem;
+  border-radius: 15px;
+  font-size: 1.2rem;
+}

@@ -1,15 +1,24 @@
-import Header from "./components/Header";
-import Bio from "./components/Bio";
+import { useState } from "react";
+
+import Header from "./components/Layout/Header";
+import Meals from "./components/Meals/Meals";
 
 import "./App.css";
 
 function App() {
+  const [amount, setAmount] = useState();
+
+  const amountHandler = (value) => {
+    setAmount(value);
+  };
+
   return (
-    <div>
-      <Header />
-      <Bio />
-      <p>Meals</p>
-    </div>
+    <>
+      <Header amount={amount} />
+      <main>
+        <Meals amountToAdd={amountHandler} />
+      </main>
+    </>
   );
 }
 
